@@ -1,0 +1,134 @@
+
+body{
+  background-color:rgba(238,241,242,0.706);
+}
+
+.container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  align-self: center;
+  z-index: 2;
+  margin: 0 auto;
+  margin-top: 3em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1{
+  text-transform: capitalize;
+  font-family: Sans-Serif;
+  color: black;
+}
+
+header > p{
+  margin-top: -15px;
+}
+
+p{
+  text-align: center;
+  color: black;
+  font-size: 10px;
+}
+
+.formcontent{
+  border-bottom: 1px solid black;
+  padding-bottom: 7px;
+  margin-top: 20px;
+}
+
+input{
+  margin-left: 1em;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.formcontent label::after{
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid #1a237e;
+  left: 0px;
+  bottom: -1px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.formcontent input:focus + .animation .content, .formcontent input:valid + .animation .content{
+  transform: translateY(-150%);
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.formcontent input:focus + .animation::after, .formcontent input:valid + .animation::after{
+  transform: translateX(0%);
+}
+
+.link{
+  margin-top: 1em;
+  background-color: green;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.link button{
+  cursor: pointer;
+  background-color: green;
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+section{
+  background-color: white;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  align-self: center;
+  width: 60%;
+}
+
+section > p{
+  text-align: center;
+  font-size: 7px;
+}
+
+section > p a{
+  text-decoration: none;
+  color: green;
+  font-size: 7px;
+  text-align: center;
+}
+
+#img2, #img3, #img4{
+  visibility: hidden;
+}
+
+/*.forminput{
+  background-image: url("/eye.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.forminputshow{
+   background-image: url("/eye-slash.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+} */
+
+
+
+
+@media screen and (min-width: 768px){
+  .container{
+    width: 50%;
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 22em;
+  }
+}
