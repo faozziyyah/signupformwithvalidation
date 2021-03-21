@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+  
+  <title>Sign up form with validation</title>
+</head>
+<body>
+ <div class="container">
+   
+	<header>
+	  <h1>create account</h1>
+    <p>it's free and hardly takes more than 30 seconds</p>
+	</header>
+	
+	
+	<form onsubmit="return validation()">
+	  
+	  <div class="formcontent">
+	  <label class="animation">
+     <span class="content"><i class="fas fa-user"></i></span>
+    </label>
+  <input type="text" placeholder="Username" id="userinput">
+  <img src="eye.svg" width="20" id="img2">
+	  </div>
+	  
+	  <div class="formcontent">
+	  <label class="animation">
+     <span class="content"><i class="fas fa-paper-plane"></i></span>
+    </label>
+   <input type="email" placeholder="Email Address" id="emailinput">
+   <img src="eye.svg" width="20" id="img3">
+	  </div>
+	  
+	  <div class="formcontent forminput" id="background">
+	  <label class="animation">
+     <span class="content"><i class="fas fa-lock"></i></span>
+    </label>
+   <input type="password" placeholder="Password" id="passwordinput">
+  <img src="eye.svg" width="20" id="img1" onclick="showpassword()" onmouseout="hidepassword()">
+	  </div>
+	  
+	  <div class="formcontent">
+	  <label class="animation">
+     <span class="content"><i class="fas fa-lock"></i></span>
+    </label>
+   <input type="password" placeholder="Confirm Password" id="comfirmpassword">
+   <img src="eye.svg" width="20" id="img4">
+	  </div>
+	  
+	  <div class="link" id="signup">
+	     <button type="submit">Sign Up</button>
+	  </div>
+	  
+	</form>
+	
+	<section>
+	   <p>By clicking on the sign up button, you agree to our <a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>. </p>
+	</section>
+	
+	</div>
+
+<script src="js/index.js"></script>
+	 
+</body>
+</html>
